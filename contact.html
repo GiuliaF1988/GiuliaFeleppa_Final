@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        .bkg {
+            background-image: url(assets/img/contact.JPG);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+
+        .text-content :after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        p {
+            font-family: "Oxygen", sans-serif;
+            text-align: left;
+
+            font-size: 19px;
+            font-weight: 400;
+            padding: 400px 90px 20px 1250px;
+            line-height: 2;
+            color: #fff;
+        }
+
+        .text-content {
+            width: auto;
+        }
+
+        .text-content h2 {
+            font-family: "Oxygen", sans-serif;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 100px 90px 20px 1250px;
+            line-height: 2;
+            color: #fff;
+        }
+
+
+        .logo {
+
+            margin-left: 40px;
+        
+        }
+        .side-navbar {
+            height: 100%;
+            width: 225px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.3);
+            overflow-x: hidden;
+            padding-top: 40px;
+            -webkit-animation: left-to-right 2s linear forwards;
+        }
+
+        .side-navbar a {
+            position: relative;
+            font-family: 'Oxygen', sans-serif;
+            margin-top: 10px;
+            padding: 60px 5px 5px 60px;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            color: white;
+        }
+      
+
+        .side-navbar a:hover {
+            color: rgb(252, 125, 29);
+        }
+
+        .socialmedia {
+            display: flex;
+            object-position: left;
+            margin: 135px 50px 30px 20px;
+        }
+
+        .icon {
+            padding: 10px;
+        }
+
+        .icon:hover {
+            color: black;
+            opacity: .5;
+        }
+
+        #menubtn {
+            box-sizing: border-box;
+            display: none;
+            width: 80px;
+            height: 80px;
+            border: none;
+            background-color: transparent;
+            color: white;
+            margin: -100px 10px 30px 280px;
+            font-family: 'Oxygen', sans-serif;
+            font-style: normal;
+            font-size: 1.5em;
+            padding: 8px;
+
+        }
+
+        /* Responsive layout - ipad */
+        @media screen and (max-width: 768px) {
+            bkg {
+                height: 1024px;
+                width: 768px;
+            }
+
+            .text-content {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #menubtn {
+                display: none;
+            }
+
+            p {
+                
+                text-align: left;
+                font-size: 19px;
+                font-weight: 400;
+                margin: 0;
+                padding: 320px 60px 0px 520px;
+                line-height: 1.6;
+                color: #fff;
+            }
+
+            .text-content h2 {
+                display: flex;
+                width: 100%;
+                padding: 50px 0px 0px 500px;
+            
+                text-align: center;
+                margin: 0;
+            }
+
+            .side-navbar a {
+                color: rgb(252, 125, 29);
+            }
+        }
+
+        @-webkit-keyframes left-to-right {
+            from {
+                left: -100%
+            }
+
+            to {
+                left: 0
+            }
+        }
+
+
+        /* Responsive layout - iphonex */
+        @media screen and (max-width: 375px) {
+            .side-navbar {
+                text-align: center;
+                float: center;
+                margin: 0;
+                padding: 10px 0px 0px 0px;
+                height: 550px;
+                width: 375px;
+                overflow: hidden;
+                animation: 2s slide-down;
+                margin-top: 0%;
+            }
+
+            .bkg {
+                width: 375px;
+                height: 812px;
+
+            }
+
+            #menubtn {
+                display: block;
+                color: rgb(252, 125, 29);
+            }
+
+
+            @keyframes slide-down {
+                from {
+                    margin-top: -100%;
+                    height: 300%;
+                }
+
+                to {
+                    margin-top: 0%;
+                    height: 100%;
+                }
+            }
+
+
+            .side-navbar a {
+                padding: 15px;
+                color: white;
+
+            }
+
+            .logo {
+                margin: 0px 80px 0px 70px;
+            }
+
+            .text-content h2 {
+display: none;
+                position: center;
+                padding: 600px 20px 20px 40px;
+            }
+
+            p {
+                display: none;
+            }
+
+            .socialmedia {
+                position: right;
+                display: content;
+                padding: 10px 0px 0px 150px;
+                margin: 0;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="home" class="bkg">
+
+        <div class="side-navbar">
+            <img class="logo" src="assets/img/logogf2.png" height="120">
+            <button id="menubtn">&#9776;</button>
+            <a href="index.html"> HOME</a>
+            <a href="street.html">STREET</a>
+            <a href="food.html">FOOD</a>
+            <a href="portraits.html">PORTRAITS</a>
+            <a href="contact.html">CONTACT</a>
+
+            <div class="socialmedia">
+                <div class="icon">
+                    <a href="https://www.instagram.com/shine_tha_light/">
+                        <i class="fa fa-instagram" style="font-size:25px;">
+                        </i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="text-content">
+
+                <p> Giulia Feleppa is a Multimedia Design student with focus on Photography and Graphic Design.
+                    Started as hobby, Giulia has more than 3 years of experience as food and street photographer. All the photos on this website were shot with a Canon EOS M50.</p>
+                <h2>giuliafeleppa@live.com</h2>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $("#menubtn").click(function() {
+            $("a").toggle();
+        });
+
+    </script>
+</body>
+
+</html>
